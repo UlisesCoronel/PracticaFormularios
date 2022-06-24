@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Commissioner:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <title>Validación de formularios</title>
+  </head>
+  <body>
+    <main class="main">
+      <div class="description__container">
+        <h1 class="tittle">Validación de formularios</h1>
+        <p class="description">
+          App de práctica realizada con HTML5, CSS y JS para la validación de
+          formularios del lado del cliente
+        </p>
+      </div>
+      <form class="form__container" id="form" autocomplete="off">
+        <input
+          type="text"
+          id="username"
+          class="form__input"
+          placeholder="Username"
+        />
+        <p class="form__invalid" id="invalidName">
+          El nombre ingresado no es válido
+        </p>
+
+        <input
+          type="text"
+          id="emailUser"
+          class="form__input"
+          placeholder="Email"
+          autocomplete="off"
+        />
+        <p class="form__invalid" id="invalidEmail">
+          El email ingresado no es válido
+        </p>
+        <button type="submit" class="form__button">Enviar</button>
+        <p class="form__successful" id="successful">
+          ¡El mensaje fue enviado con éxito!
+        </p>
+      </form>
+    </main>
+    <script src="app.js"></script>
+  </body>
+</html>
